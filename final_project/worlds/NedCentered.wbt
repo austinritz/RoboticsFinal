@@ -1,0 +1,160 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.019749125372703742 0.8163844307479907 0.5771710606737767 3.1974472441419968
+  position 0.011525012706891408 2.2486425915644532 -0.9464487616434063
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 0 1 0 4.6928012867022945e-06
+  floorSize 3 3
+}
+DEF Red Solid {
+  translation -0.2 0.3149894051873774 -0.3
+  rotation -7.938179237579149e-17 0.9999999999999999 -3.135134905046776e-17 2.35619
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0
+        }
+      }
+      geometry Box {
+        size 0.03 0.03 0.03
+      }
+    }
+  ]
+  name "Red Cube"
+  boundingObject Box {
+    size 0.03 0.03 0.03
+  }
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.1 0.3149894051873774 -0.4
+  rotation -1.7370516324072932e-16 1 -8.44781320563302e-17 1.8326
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0.9 0
+        }
+      }
+      geometry Box {
+        size 0.03 0.03 0.03
+      }
+    }
+  ]
+  name "Green Cube"
+  boundingObject Box {
+    size 0.03 0.03 0.03
+  }
+  physics Physics {
+    mass 0.0001
+  }
+}
+Solid {
+  translation 0.1 0.31498940518737734 -0.4
+  rotation 1.497078966513274e-16 -1 2.0246458770965818e-16 1.8300000000000005
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 1
+        }
+      }
+      geometry Box {
+        size 0.03 0.03 0.03
+      }
+    }
+  ]
+  name "Blue Cube"
+  boundingObject Box {
+    size 0.03 0.03 0.03
+  }
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.2 0.3149894051873774 -0.3
+  rotation -6.399567003362921e-17 0.9999999999999999 -5.6082436391625774e-18 2.35619
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 0
+        }
+      }
+      geometry Box {
+        size 0.03 0.03 0.03
+      }
+    }
+  ]
+  name "Yellow Cube"
+  boundingObject Box {
+    size 0.03 0.03 0.03
+  }
+  physics Physics {
+  }
+}
+Table {
+  translation 0 0 -0.4
+  size 0.8 0.3 0.4
+  feetSize 0.05 0.05
+}
+Ned2 {
+  rotation -1 0 0 1.57
+  controller "ned_python2"
+  toolSlot [
+    Camera {
+      children [
+        Shape {
+          appearance PBRAppearance {
+          }
+          geometry Box {
+            size 0.05 0.05 0.001
+          }
+        }
+      ]
+      width 320
+      height 240
+    }
+  ]
+}
+Solid {
+  translation 0 0.3 -0.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.005 0.1
+      }
+    }
+  ]
+}
+Solid {
+  translation 0 0.30005 -0.5
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0
+        }
+      }
+      geometry Box {
+        size 0.03 0.005 0.03
+      }
+    }
+  ]
+  name "solid(1)"
+}
